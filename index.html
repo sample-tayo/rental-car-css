@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Rental car</title>
+  </head>
+  <body>
+      <div class="container">
+        <h1>Search for rental car</h1>
+  
+        <form action="">
+          <p>Pick up location</p>
+          <input type="text" placeholder="City, airport, region, district..." />
+          <label class="checkbox" for="deliverCar">
+            <input
+              checked
+              type="checkbox"
+              class="checkbox-input"
+              name="checkbox-deliverCar"
+              id="deliverCar"
+            />
+            <div class="checkbox-box"></div>
+            Deliver the car somewhere else</label
+          >
+  
+          <div class="wrapper">
+            <div class="date-flex date">
+              <label for="date-01">Date of pickup</label>
+            <input type="date" class="date-01" id="date-01">
+            </div>
+            <div class="date-flex">
+            <label for="date-02">Date of Delivery</label>
+            <input type="date" class="date-02" id="date-02">
+            </div>
+          </div>
+  
+          <label class="checkbox ageCheck" for="ageCheck">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              name="checkbox-deliverCar"
+              id="ageCheck"
+            />
+            <div class="checkbox-box"></div>
+            The driver's age between 30 and 65?</label
+          >
+  
+          <ul>
+            <li>No credt card fees</li>
+            <li>No change fees</li>
+            <li>Price match guarantee</li>
+          </ul>
+  
+          <button class="search-btn">Search</button>
+  
+      </div>
+
+  </body>
+</html>

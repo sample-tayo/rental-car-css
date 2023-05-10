@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3e3;
+  color: #243264;
+}
+
+.container {
+  margin: 0;
+  padding: 20px;
+  background-color: #ffffff;
+  width: 30%;
+  height: auto;
+  border-radius: 15px;
+  position: relative;
+}
+
+.container::before,
+.container::after {
+  z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 55%; /* 20px greater than the container */
+  height: 50%; /* 20px greater than the container */
+}
+
+.container::before {
+  top: -50px; /* Show the background at the top-left corner */
+  left: -50px;
+  /* width: 50px;
+  height: 100px; */
+  border-radius: 50px;
+  background-color: #fab564;
+}
+
+.container::after {
+  bottom: -50px; /* Show the background at the bottom-right corner */
+  right: -50px;
+  width: 55%;
+  border-radius: 50px;
+  background-color: #fc6c4c;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+form p {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+form input {
+  background-color: #fff;
+  width: 100%;
+  height: 55px;
+  border: 0.1em solid #cfcfcf;
+  border-radius: 5px;
+  outline: none;
+}
+
+form label {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-input {
+  display: none;
+}
+.checkbox-box {
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid #8f8f8f;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.checkbox-box::after {
+  content: "\2714";
+  color: #ffffff;
+}
+
+.checkbox-input:checked + .checkbox-box {
+  background-color: #243264;
+  border-color: #243264;
+}
+/* styling fot the date */
+.wrapper {
+  display: flex;
+  margin-top: 10px;
+  overflow: hidden;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+.date-flex {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+}
+/* .date {
+  margin-right: 20px;
+} */
+
+input[type="date"] {
+  background-color: none;
+  padding: 15px;
+  font-family: "Roboto Mono", monospace;
+  color: #243264;
+  font-size: 18px;
+  width: 170px;
+  max-width: 100%;
+  border: 0.1em solid #cfcfcf;
+  outline: none;
+  border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator {
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.ageCheck {
+  margin-top: 30px;
+}
+
+ul {
+  margin: 20px auto;
+  list-style: none;
+  font-size: 14px;
+}
+
+ul li:before {
+  content: "✓";
+  margin-right: 10px;
+}
+
+/* CSS code for styling search button */
+.search-btn {
+  background-color: #fe6f50;
+  color: white;
+  width: 100%;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 80%;
+    height: 500px;
+    max-height: 100%;
+  }
+
+  .container::before {
+    top: -50px; /* Show the background at the top-left corner */
+    left: -50px;
+    margin-left: 20px;
+    /* width: 50px;
+    height: 100px; */
+    border-radius: 50px;
+    background-color: #fab564;
+  }
+
+  .container::after {
+    bottom: -50px; /* Show the background at the bottom-right corner */
+    right: -50px;
+    width: 55%;
+    margin-right: 20px;
+    border-radius: 50px;
+    background-color: #fc6c4c;
+  }
+  input[type="date"] {
+    width: 145px;
+    max-width: 100%;
+  }
+}
+
+/* @media only screen and (max-width: 500px) {
+  p {
+    font-size: 0.5rem;
+  }
+
+  h1 {
+    color: blue;
+  }
+} */
+/* 
+.gradient::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(#1a1a1a, #1560bd);
+} */
